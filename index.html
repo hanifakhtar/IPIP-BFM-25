@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tes Kepribadian IPIP-BFM-25 — Big Five Personality Traits">
+  <title>IPIP-BFM-25 | Tes Kepribadian Big Five</title>
+  <style>
+    html,body{margin:0;padding:0;height:100%;background:#f5f7fb;color:#162640;font:15px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+    #app{display:block;width:100%;height:100vh;height:100dvh;border:0;background:#f5f7fb}
+    .setup{max-width:710px;margin:10vh auto;padding:36px;border:1px solid #dee8f6;border-radius:20px;background:white;box-shadow:0 10px 35px #112c6320}
+    .setup h1{font-size:25px;margin:0 0 12px}.setup code{background:#eef3ff;padding:3px 6px;border-radius:5px}
+    .setup a{color:#235ee7}.setup p{color:#52657d}
+    #fallback{position:fixed;bottom:10px;right:14px;background:#fff;border:1px solid #dce5f5;border-radius:50px;padding:5px 12px;font-size:12px;box-shadow:0 4px 12px #112c6318}
+    #fallback a{color:#235ee7;text-decoration:none}
+  </style>
+</head>
+<body>
+<script>
+  // =======================================================
+  // EDIT SATU BARIS INI: isi URL deployment Web App Apps Script
+  // Contoh: https://script.google.com/macros/s/AKfycb.../exec
+  // Jangan masukkan OpenAI API key di halaman ini.
+  // =======================================================
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw239FQiWibzc_L5Ph7auvixp4wfAfOpFhgtyoS-jZP3xcFup_-O7fQDf0hqv6k7vFRhA/exec';
+  const isValid = /^https:\/\/script\.google\.com\/macros\/s\/[^/?#]+\/exec(?:\?.*)?$/.test(APPS_SCRIPT_URL);
+  if (isValid) {
+    const iframe = document.createElement('iframe');
+    iframe.id = 'app';
+    iframe.title = 'Tes Kepribadian IPIP-BFM-25';
+    iframe.src = APPS_SCRIPT_URL;
+    iframe.allow = 'clipboard-write';
+    document.body.appendChild(iframe);
+    const fallback = document.createElement('div');
+    fallback.id = 'fallback';
+    const link = document.createElement('a');
+    link.href = APPS_SCRIPT_URL;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = 'Buka aplikasi langsung ↗';
+    fallback.appendChild(link);
+    document.body.appendChild(fallback);
+  } else {
+    document.body.innerHTML = `<div class="setup"><h1>IPIP-BFM-25 · Konfigurasi diperlukan</h1>
+      <p>HTML GitHub Pages sudah tersedia. Sebelum aplikasi dapat digunakan, Anda perlu men-deploy file <code>apps-script/Code.gs</code> dan <code>apps-script/Index.html</code> sebagai <strong>Web App Google Apps Script</strong>.</p>
+      <p>Setelah mendapatkan URL <code>https://script.google.com/macros/s/.../exec</code>, buka file <code>index.html</code> ini di GitHub dan ganti nilai <code>APPS_SCRIPT_URL</code> di bagian atas script.</p>
+      <p>Baca <strong>README.md</strong> untuk langkah lengkap.</p></div>`;
+  }
+</script>
+</body>
+</html>
